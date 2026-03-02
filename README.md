@@ -61,6 +61,14 @@ class Program
 }
 ```
 
+**SECTION B**
+
+The Inventory component is implemented using the Singleton Pattern. Because a single shared instance is used across the application.
+Since inventory is a shared resource, this approach helps maintain consistency and prevents multiple instances from modifying the same data concurrently.
+
+To handle concurrent access, synchronization is managed using a SemaphoreSlim. This prevent from the race condition.
+
+
 
 **SECTION C**
 
