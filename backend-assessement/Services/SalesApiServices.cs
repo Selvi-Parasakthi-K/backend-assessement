@@ -7,7 +7,7 @@ namespace backend_assessement.Services
     {
         private int _inventory = 0;
 
-        private ConcurrentDictionary<string, Reservaion> _reservations = new();
+        private ConcurrentDictionary<string, Reservation> _reservations = new();
 
         private Queue<string> _waitList = new();
 
@@ -29,7 +29,7 @@ namespace backend_assessement.Services
                     _inventory--;
                     var reservationId = Guid.NewGuid().ToString();
 
-                    var reservation = new Reservaion
+                    var reservation = new Reservation
                     {
                         UserId = userId,
                         ReservationId = reservationId,
