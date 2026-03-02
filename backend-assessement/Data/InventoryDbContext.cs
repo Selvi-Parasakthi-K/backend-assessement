@@ -11,6 +11,5 @@ namespace backend_assessement.Data
 
         }
         public DbSet<Reservation> reservation { get; set; }
-
     }
 }
