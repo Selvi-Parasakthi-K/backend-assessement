@@ -169,6 +169,12 @@ GET /status
 
 ### **SOLUTION**
 
+The `success_rate` for each driver is calculated using the following formula:
+```
+Success Rate (%) = 
+(Number of Completed Deliveries / Total Delivery Attempts) * 100
+```
+
 ```
 SELECT driver_id, COUNT(*) AS total_deliveries, 
 	SUM(CASE 
